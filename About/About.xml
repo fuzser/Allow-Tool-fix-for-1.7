@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Allow Tool - 1.7 Fix</name>
+	<name>Allow Tool - 1.7 Fix (Continued)</name>
 	<author>UnlimitedHugs (original), WorldLeader (1.7 fix)</author>
 	<supportedVersions>
 		<li>1.0</li>
@@ -13,12 +13,28 @@
 		<li>1.7</li>
 	</supportedVersions>
 	<url>https://github.com/fuzser/Allow-Tool-fix-for-1.7</url>
-	<packageId>UnlimitedHugs.AllowTool</packageId>
-	<description>Version: 3.14.1
+	<packageId>worldleader.allowtool</packageId>
+	<description>Version: 3.14.1 (RimWorld 1.7)
 
-RimWorld 1.7 compatibility update by WorldLeader. Original mod by UnlimitedHugs.
+Original mod by UnlimitedHugs.
+RimWorld 1.7 update and maintenance by WorldLeader.
 
-Fixes party-hunt errors during save loading, filters invalid urgent-haul cache entries, and restores 1.7-compatible settings UI types.
+WHAT CHANGED IN THIS VERSION
+
+• Added a dedicated RimWorld 1.7 load folder and rebuilt the assembly for .NET 10.
+• Fixed a save-loading error in Party Hunt. Wait jobs could run before HugsLib initialized the world settings, causing repeated NullReferenceExceptions and leaving pawns or mechanoids jobless.
+• Made Urgent Haul ignore destroyed, despawned, mapless and cross-map objects left in its cache.
+• Added a compatibility bridge between HugsLib's legacy UnityEngine.Rect type and RimWorld 1.7's UnityStubs UI type.
+• Checked all Harmony patch targets and reflected game members against RimWorld 1.7.5014.
+• Fixed malformed Korean key-binding translation XML.
+
+COMPATIBILITY
+
+This continued version uses the independent package ID worldleader.allowtool. Do not enable it together with the original Allow Tool. Existing saves can continue using the same Allow Tool defs and settings. HugsLib is still required.
+
+本版本由 WorldLeader 为 RimWorld 1.7 更新维护，原作者为 UnlimitedHugs。
+
+主要修改：修复读取存档时集体狩猎功能产生的空引用与任务恢复循环；过滤紧急搬运缓存中的无效物品；适配 RimWorld 1.7 的 .NET 10 和新版 UI 类型；检查 Harmony 补丁目标；修复韩语翻译 XML。请勿与原版 Allow Tool 同时启用。
 
 A set of tools to make your life on the Rim a bit easier.
 Easily forbid and unforbid items, select similar things, have things hauled urgently and affect the entire map with powerful new tool extensions.

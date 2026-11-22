@@ -1,8 +1,8 @@
-# Allow Tool - RimWorld 1.7 Fix
+# Allow Tool - 1.7 Fix (Continued)
 
-This repository updates **Allow Tool** for RimWorld 1.7 while preserving the
-original package ID (`UnlimitedHugs.AllowTool`) for save and translation-mod
-compatibility.
+This repository updates **Allow Tool** for RimWorld 1.7 under the independent
+package ID `worldleader.allowtool`. Do not enable it together with the original
+Allow Tool.
 
 Original mod and source by [UnlimitedHugs](https://github.com/UnlimitedHugs/RimworldAllowTool).
 RimWorld 1.7 compatibility update by WorldLeader.

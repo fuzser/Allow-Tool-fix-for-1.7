@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Allow Tool - RimWorld 1.7 Fix")]
+[assembly: AssemblyTitle("Allow Tool - 1.7 Fix (Continued)")]
 [assembly: AssemblyDescription("RimWorld 1.7 compatibility update for Allow Tool")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
