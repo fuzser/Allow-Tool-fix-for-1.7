@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Allow Tool</name>
-	<author>UnlimitedHugs</author>
+	<name>Allow Tool - 1.7 Fix</name>
+	<author>UnlimitedHugs (original), WorldLeader (1.7 fix)</author>
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
@@ -10,10 +10,15 @@
 		<li>1.4</li>
 		<li>1.5</li>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
-	<url>https://ludeon.com/forums/index.php?topic=17218.0</url>
+	<url>https://github.com/fuzser/Allow-Tool-fix-for-1.7</url>
 	<packageId>UnlimitedHugs.AllowTool</packageId>
-	<description>Version: 3.14.0
+	<description>Version: 3.14.1
+
+RimWorld 1.7 compatibility update by WorldLeader. Original mod by UnlimitedHugs.
+
+Fixes party-hunt errors during save loading, filters invalid urgent-haul cache entries, and restores 1.7-compatible settings UI types.
 
 A set of tools to make your life on the Rim a bit easier.
 Easily forbid and unforbid items, select similar things, have things hauled urgently and affect the entire map with powerful new tool extensions.

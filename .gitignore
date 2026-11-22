@@ -1,3 +1,11 @@
 # Test runner temporary state
 Assemblies/nunit_random_seed.tmp
 
+# Local SDK and build intermediates
+.dotnet/
+.tools/
+bin/
+obj/
+build-*.log
+*.decompiled.cs
+

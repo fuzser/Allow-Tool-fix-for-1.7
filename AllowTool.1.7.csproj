@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>AllowTool</AssemblyName>
+    <RootNamespace>AllowTool</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <OutputPath>v1.7\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Superseded by Command_GizmoOnGUI_Patch and excluded by the upstream project. -->
+    <Compile Remove="Source\Patches\Designator_ProcessInput_Patch.cs" />
+    <Compile Remove="BuildSupport\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityStubs">
+      <HintPath>..\..\UnityStubs.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- HugsLib 1.6 exposes Unity types using the legacy assembly identity. -->
+    <ProjectReference Include="BuildSupport\LegacyUnityEngine.CoreModule.csproj"
+                      Aliases="legacyunity"
+                      Private="false" />
+    <Reference Include="Waylith">
+      <HintPath>..\..\Waylith.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\..\..\..\workshop\content\294100\818773962\v1.6\Assemblies\HugsLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
